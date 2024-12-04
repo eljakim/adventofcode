@@ -20,8 +20,6 @@ for x in range(len(puzzle[0])-2):
         pattern+=puzzle[y+1][x+1]
         pattern+=puzzle[y][x+2]
         pattern+=puzzle[y+2][x+2]
-        if pattern.count("M")==2 and pattern.count("S")==2 and pattern[2]=="A":
-            print(pattern)
         if pattern in search:
             correct+=1
 
