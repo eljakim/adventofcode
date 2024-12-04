@@ -18,5 +18,5 @@ fun main() {
                     }
         }
     }
-    print(s)
+    println(s)
 }
