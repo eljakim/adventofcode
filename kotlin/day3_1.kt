@@ -9,5 +9,5 @@ fun main() {
         val b = ins[1].filter { it.isDigit() }.toInt()
         s += a * b
     }
-    print(s)
+    println(s)
 }
