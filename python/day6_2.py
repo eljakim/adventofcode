@@ -75,11 +75,9 @@ def search(lines, guard_x, guard_y):
     global start
     guard_direction='up'
     beenthere=[]
-    while guard_x>=0 and guard_y>=0 and guard_x<len(lines[0]) and guard_y<len(lines):
-        l = list(visited[guard_y])
-        l[guard_x]="X"
-        l="".join(l)
-        visited[guard_y]=l
+    width=len(lines[0])
+    height=len(lines)
+    while guard_x>=0 and guard_y>=0 and guard_x<width and guard_y<height:
         position=(guard_x, guard_y, guard_direction)
 
         if position in beenthere:
@@ -128,12 +126,9 @@ while start in obstacles:
     obstacles.remove(start)
 obstacles=list(set(obstacles))
 
-print(len(obstacles))
-
 s=0
 i=0
 for o in obstacles:
-    print(i,s)
     replacement=list(lines[o[1]])
     replacement[o[0]]='#'
     new = lines.copy()

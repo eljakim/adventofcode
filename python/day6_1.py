@@ -59,7 +59,7 @@ while guard_x>=0 and guard_y>=0 and guard_x<len(lines[0]) and guard_y<len(lines)
         else:
             guard_x-=1
 
-print("\n".join(visited))
+# print("\n".join(visited))
 
 v = 0
 for l in visited:
