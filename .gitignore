@@ -1,3 +1,4 @@
 kotlin/*.jar
 kotlin/*sample*
 kotlin/*input
+.DS_Store
