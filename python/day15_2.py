@@ -116,26 +116,7 @@ def simulateMove(direction, x, y):
     i = canMove(direction,x,y)
     doMove(direction, i, x, y)
 
-#printMap(map)
-#print(robot_x, robot_y)
-#simulateMove(">", robot_x, robot_y)
-#printMap(map)
-#simulateMove("v", robot_x, robot_y)
-#printMap(map)
-#simulateMove("v", robot_x, robot_y)
-#simulateMove("<", robot_x, robot_y)
-#simulateMove("<", robot_x, robot_y)
-#simulateMove("^", robot_x, robot_y)
-#print(canMove('^',robot_x, robot_y))
-#print(robot_x, robot_y)
-#printMap(map)
-#print(robot_x, robot_y)
-#print(canMove("v", robot_x, robot_y))
-#exit(0)
-
 for m in moves:
-    #printMap(map)
-    #print(f"\nMove {m}")
     simulateMove(m, robot_x, robot_y)
 printMap(map)
 
@@ -145,7 +126,3 @@ for y in range(height):
         if map[y][x]=="[":
             s+=x+100*y
 print(s)
-# print(lines)
-# print(map)
-# print(moves)
-# print(robot_x, robot_y)
