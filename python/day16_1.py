@@ -1,7 +1,4 @@
 import sys
-import copy
-
-from numpy._typing import _16Bit
 
 lines=[l.strip() for l in sys.stdin.readlines()]
 
