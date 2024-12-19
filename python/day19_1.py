@@ -11,9 +11,7 @@ class Node:
         if w=="":
             self.end = True
         else:
-            if w[0] not in self.next:
-                self.next[w[0]]=Node()
-            self.next[w[0]].addWord(w[1:])
+            self.next.setdefault(w[0], Node()).addWord(w[1:])
 
     def checkWord(self, w):
         if w=="":
